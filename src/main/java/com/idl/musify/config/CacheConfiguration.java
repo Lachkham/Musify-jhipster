@@ -51,6 +51,11 @@ public class CacheConfiguration {
             createCache(cm, com.idl.musify.domain.User.class.getName());
             createCache(cm, com.idl.musify.domain.Authority.class.getName());
             createCache(cm, com.idl.musify.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.idl.musify.domain.Artist.class.getName());
+            createCache(cm, com.idl.musify.domain.Artist.class.getName() + ".albums");
+            createCache(cm, com.idl.musify.domain.Album.class.getName());
+            createCache(cm, com.idl.musify.domain.Album.class.getName() + ".songs");
+            createCache(cm, com.idl.musify.domain.Song.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

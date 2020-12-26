@@ -1,0 +1,39 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [
+    {
+      "relationshipName": "album",
+      "otherEntityName": "album",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "artist"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "birthDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "instrument",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20201226220509",
+  "dto": "mapstruct",
+  "searchEngine": false,
+  "service": "serviceImpl",
+  "entityTableName": "artist",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": false,
+  "pagination": "pagination"
+}

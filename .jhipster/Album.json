@@ -1,0 +1,54 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [
+    {
+      "relationshipName": "artist",
+      "otherEntityName": "artist",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id",
+      "otherEntityRelationshipName": "album"
+    },
+    {
+      "relationshipName": "song",
+      "otherEntityName": "song",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "album"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "label",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "releaseDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "lengthSeconds",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "genre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "studio",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "producer",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20201226222619",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "serviceImpl",
+  "entityTableName": "album",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": false,
+  "pagination": "pagination"
+}
